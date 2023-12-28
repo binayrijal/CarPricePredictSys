@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6e6563c2-8638-445d-b0ec-8156a54bbbf8" name="Changes" comment="">
       <change beforePath="D:/CarPriceProject/.idea/workspace.xml" beforeDir="false" afterPath="D:/CarPriceProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="D:/CarPriceProject/LinearRegressionmodel.csv" beforeDir="false" />
       <change beforePath="D:/CarPriceProject/main.py" beforeDir="false" afterPath="D:/CarPriceProject/main.py" afterDir="false" />
+      <change beforePath="D:/CarPriceProject/processed_data.csv" beforeDir="false" />
       <change beforePath="D:/CarPriceProject/templates/index.html" beforeDir="false" afterPath="D:/CarPriceProject/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

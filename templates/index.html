@@ -18,7 +18,7 @@
            </div>
          </div>
          <div class="card-body">
-         <form method="post" action accept-charset="utf-8">
+         <form method="post"  accept-charset="utf-8">
            <div class="col-10 form-group" style="text-align:center">
             <label><b>select company:</b></label>
             <select class="select-picker form-control" name="company" id="company" required="1" onchange="load_car_model(this.id,'car_models')">
@@ -98,6 +98,8 @@
             }
           {%endfor%}
         }
+
+
         function form_handler(event)
         {
          event.preventDefault();
@@ -106,16 +108,16 @@
 
         function send_data()
         {
-           document.queryselector('form').add('submit',form_handler);
+           document.querySelector('form').addEventListener('submit',form_handler);
 
-           var fd=new FormData(document.queryselector('form'));
+           var fd=new FormData(document.querySelector('form'));
            var xhr=new XMLHttpRequest();
-           xhr.open('POST','/predict',true)
-           document.getElementById("prediction").innerHTML="wait prediction is predicting.............."
+           xhr.open('post','/predict',true)
+           document.getElementById("prediction").innerHTML="wait prediction is predicting..............";
 
            xhr.onreadystatechange=function()
            {
-             if(xhr.readystate==XMLHttpRequest.Done)
+             if(xhr.readyState==XMLHttpRequest.DONE)
              {
                document.getElementById("prediction").innerHTML="prediction is " + xhr.responseText;
              }
